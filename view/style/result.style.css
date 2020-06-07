@@ -1,0 +1,14 @@
+#card{
+    display: flex;
+    flex-direction: row;
+}
+#titleAu{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    text-align: center;
+    text-overflow: ellipsis;
+}

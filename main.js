@@ -1,6 +1,7 @@
 const {app,BrowserWindow,ipcMain,dialog} = require('electron')
-var searchController = require('./controller/handleSearch')
-var resultController = require('./controller/handlerResult')
+var handleSearch = require('./controller/handleSearch')
+var handlerResult = require('./controller/handlerResult')
+var handlerPlayer = require('./controller/handlePlayer')
 function boot(){
     let win = new BrowserWindow({
         width:400,
@@ -12,7 +13,8 @@ function boot(){
     win.loadFile('./view/index.html')
 }
 
-searchController.getAutoComplteData()
-resultController.getSearchData()
+handleSearch.getAutoComplteData()
+handlerResult.getSearchData()
+handlerPlayer.receiveSelectItem()
 
 app.whenReady().then(boot)
