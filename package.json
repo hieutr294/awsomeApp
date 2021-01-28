@@ -11,7 +11,7 @@
   "devDependencies": {
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
-    "electron": "^9.0.2",
+    "electron": "^9.4.0",
     "wavesurfer.js": "^3.3.3",
     "ytdl-core": "^2.1.7"
   }
